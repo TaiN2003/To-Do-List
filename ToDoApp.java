@@ -1,8 +1,11 @@
 import java.util.Scanner;
+import java.util.List;
+import java.util.ArrayList;
 
 public class ToDoApp {
     
     private boolean isRunning = true;
+    private List<String> tasks = new ArrayList<>();
 
     public void run() {
         Scanner scan = new Scanner(System.in);
@@ -16,7 +19,10 @@ public class ToDoApp {
                 case "view":
                     
                 case "add":
+                    TypingEffect.typing("What task would you like to add? ", 65);
+                    String taskToAdd = scan.nextLine();
 
+                    AddTask.addUserTask(tasks, taskToAdd);
                 case "remove":
 
                 case "exit":

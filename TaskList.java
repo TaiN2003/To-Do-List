@@ -5,18 +5,10 @@ public class TaskList {
     
     private List<String> tasks = new ArrayList<>();
 
-    public void addTask(String task) {
-        tasks.add(task);
+    public void taskManager(List<String> tasks) {
+        this.tasks = tasks;
     }
-    public void removeTask(int index) {
-        if(index >= 0 && index < tasks.size()) {
-            tasks.remove(index);
-        }
-        else {
-            TypingEffect.typing("No task to remove!", index);
-        }
-    }
-    public List<String> getTasks() {
+    public List<String> returnList() {
         return tasks;
     }
 }
