@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ToDoList {
+public class ToDoApp {
     
     private boolean isRunning = true;
 

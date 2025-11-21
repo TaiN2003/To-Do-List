@@ -1,8 +1,6 @@
-
-
 public class Main {
     public static void main(String[] args) {
-        ToDoList app = new ToDoList();
+        ToDoApp app = new ToDoApp();
         
         app.run();
     }
