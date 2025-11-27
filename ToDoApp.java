@@ -34,8 +34,6 @@ public class ToDoApp {
                     TypingEffect.typing("Action not recognized. Please try again.\n", 65);
                     
             }
-            
-            isRunning = false; // Temporary Program Termination
         }
         scan.close();
     }
