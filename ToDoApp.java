@@ -18,13 +18,19 @@ public class ToDoApp {
             switch (userAction.toLowerCase()) {
                 case "view":
                     ViewTask.printTaskList(tasks);
+                    break;
+                    
                 case "add":
                     TypingEffect.typing("What task would you like to add? ", 65);
                     String taskToAdd = scan.nextLine();
 
                     AddTask.addUserTask(tasks, taskToAdd);
+                    break; 
+
                 case "remove":
                     TypingEffect.typing("What task would you like to remove? (Choose the task index)", 65);
+                    break;
+
                 case "exit":
                     TypingEffect.typing("Goodbye!", 65);
                     isRunning = false;
